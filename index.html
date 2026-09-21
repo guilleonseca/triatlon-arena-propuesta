@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DTR × Triatlón Arena — Propuesta</title>
+<style>
+  :root {
+    --ink: #101210;
+    --paper: #f4f4f2;
+    --accent: #c8ff3d;
+    --rule: rgba(16,18,16,0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .topbar {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--paper); border-bottom: 1px solid var(--rule);
+    padding: 16px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .topbar .title { font-weight: 700; font-size: 14px; }
+  .topbar .counter { font-size: 13px; color: #888; }
+  .deck {
+    max-width: 720px; margin: 0 auto; padding: 20px 16px 40px;
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .page-wrap {
+    background: #fff; border-radius: 8px; overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+    border: 1px solid var(--rule);
+  }
+  .page-wrap img { width: 100%; height: auto; display: block; }
+  .page-label {
+    text-align: center; font-size: 12px; color: #999; margin-top: -6px; margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="title">DTR × Triatlón Arena</div>
+  <div class="counter">5 páginas</div>
+</div>
+
+<div class="deck">
+  <div class="page-wrap"><img src="page-1.jpg" alt="Portada" loading="lazy"></div>
+  <div class="page-label">Portada</div>
+  <div class="page-wrap"><img src="page-2.jpg" alt="Propuesta" loading="lazy"></div>
+  <div class="page-label">Propuesta</div>
+  <div class="page-wrap"><img src="page-3.jpg" alt="Tarifa — precios y descuento" loading="lazy"></div>
+  <div class="page-label">Tarifa — precios y descuento</div>
+  <div class="page-wrap"><img src="page-4.jpg" alt="Notas y condiciones" loading="lazy"></div>
+  <div class="page-label">Notas y condiciones</div>
+  <div class="page-wrap"><img src="page-5.jpg" alt="Visto en Down The Road" loading="lazy"></div>
+  <div class="page-label">Visto en Down The Road</div>
+</div>
+
+</body>
+</html>
